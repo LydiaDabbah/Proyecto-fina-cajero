@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>NIP</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+  
+    <section class="flexCC contenedor-principal">
+  <section class="flexCC pantalla">
+
+    <section class="flexCC teclado-numerico">
+      <div class="contenedor-botones">
+      <button class="numero" value="1" onclick="input(this,'nip');" >1</button>
+      <button class="numero" value="2" onclick="input(this,'nip');" >2</button>
+      <button class="numero" value="3" onclick="input(this,'nip');">3</button>
+      <button class="numero" value="4" onclick="input(this,'nip');">4</button>
+      <button class="numero" value="5" onclick="input(this,'nip');">5</button>
+      <button class="numero" value="6" onclick="input(this,'nip');">6</button>
+      <button class="numero" value="7" onclick="input(this,'nip');">7</button>
+      <button class="numero" value="8" onclick="input(this,'nip');">8</button>
+      <button class="numero" value="9" onclick="input(this,'nip');">9</button>
+      <button class="numero" value="0" onclick="input(this,'nip');">0</button>
+      <button class="botonBorrar" value="borrar" onclick=" deleteLastCharacter('nip');">borrar</button>
+      
+    </div>
+    </section>
+    <section class="login-box">
+      
+    <h3>Escriba el NIP relacionado a la cuenta</h3>
+      <label for="nip"> NIP </label>
+      <input id="nip" type="password" maxlength="4">
+      <button class="boton" onclick="validarPassword();"></button>
+      <a id="correcto"></a>
+
+    <a href="index.html">Retroceder</a>
+
+    </section>
+    <section class="operaciones-box">
+
+    </section>
+  </section>
+</section>
+  </body>
+</html>

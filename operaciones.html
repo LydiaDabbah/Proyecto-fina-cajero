@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>Cuestionario Covid</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="importarCuentas();">
+  
+<section class="flexCC contenedor-principal">
+  <section class="flexCC pantalla">
+
+    <section class="headAndToes">
+        <p class="etiqueta" id="usuarioOperaciones"> </p>
+    </section>
+    
+    <section class="operaciones-box" >
+        <div class="operations-buttons" id="operations-buttons" >
+         
+          <button class="botonOperaciones" onclick="saldo();">Consultar saldo</button>
+          <button class="botonOperaciones" onclick="irA('retirar');">Retiro</button>
+          <button  class="botonOperaciones" onclick="irA('depositar');">Deposito</button>
+    
+        </div>
+
+        <p class="bold etiqueta" id="textoResultado" style="margin:0 auto"></p>
+
+        
+    
+      </section>
+    
+      <section class="headAndToes">
+        <button class="boton botonSalir" onclick="irA('index');">Salir</button>
+      </sectionclass></section>
+    
+  </section>
+</section>
+  </body>
+</html>

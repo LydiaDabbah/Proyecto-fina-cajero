@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>Cuestionario Covid</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+  
+    <div class="flexCC contenedor-principal">
+  <div class="flexCC pantalla">
+
+    <section class="headAndToes"></section>
+    <section class="flexCC teclado-numerico">
+      <div class="contenedor-botones">
+      <button class="numero" value="1" onclick="input(this,'numeroDeCuenta');"  >1</button>
+      <button class="numero" value="2" onclick="input(this,'numeroDeCuenta');" >2</button>
+      <button class="numero" value="3" onclick="input(this,'numeroDeCuenta');"  >3</button>
+      <button class="numero" value="4" onclick="input(this,'numeroDeCuenta');"  >4</button>
+      <button class="numero" value="5" onclick="input(this,'numeroDeCuenta');"  >5</button>
+      <button class="numero" value="6" onclick="input(this,'numeroDeCuenta');"  >6</button>
+      <button class="numero" value="7" onclick="input(this,'numeroDeCuenta');"  >7</button>
+      <button class="numero" value="8" onclick="input(this,'numeroDeCuenta');"  >8</button>
+      <button class="numero" value="9" onclick="input(this,'numeroDeCuenta');"  >9</button>
+      <button class="numero" value="0" onclick="input(this,'numeroDeCuenta');"  >0</button>
+      <button class="botonBorrar" value="borrar" onclick=" deleteLastCharacter('numeroDeCuenta');">borrar</button>
+    
+    </div>
+    </section>
+    <section class="login-box">
+      
+      
+      <h1 class="etiqueta bold" style="margin-top:15px;">¡Bienvenido!</h1>
+      <p class="marginBtm etiqueta">   Favor de ingresar su No. de cuenta y NIP </p>
+
+      <div class="contenedorInput">
+        <label class="etiqueta" for="numeroDeCuenta"> No. de cuenta </label>
+        <input class= "inputLogin" id="numeroDeCuenta" type="number" onclick="activeInputSave(this);">
+
+        <label class="etiqueta" for="NIP"> NIP </label>
+        <input class="inputLogin" id="NIP" type="password" maxlength="4" onclick="activeInputSave(this);">
+      
+      </div>
+      
+    
+       
+
+    </section>
+    
+    <section class="headAndToes">
+      <button  class="boton botonSiguiente" onclick="validarCuenta();"> Siguiente</button>
+    </section>
+  </div>
+</div>
+  </body>
+</html>

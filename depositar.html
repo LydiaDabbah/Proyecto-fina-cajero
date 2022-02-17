@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="index.js"></script>
+    <title>Cuestionario Covid</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="importarCuentas();"  >
+  
+    <section class="flexCC contenedor-principal">
+  <section class="flexCC pantalla">
+
+   
+    <section class="headAndToes">
+        <p class="etiqueta" id="usuarioOperaciones"> </p>
+       </section>
+        <section class="flexCC teclado-numerico">
+          <div class="contenedor-botones">
+          <button class="numero" value="1" onclick="input(this,'numeroDeCuenta');"  >1</button>
+          <button class="numero" value="2" onclick="input(this,'numeroDeCuenta');" >2</button>
+          <button class="numero" value="3" onclick="input(this,'numeroDeCuenta');"  >3</button>
+          <button class="numero" value="4" onclick="input(this,'numeroDeCuenta');"  >4</button>
+          <button class="numero" value="5" onclick="input(this,'numeroDeCuenta');"  >5</button>
+          <button class="numero" value="6" onclick="input(this,'numeroDeCuenta');"  >6</button>
+          <button class="numero" value="7" onclick="input(this,'numeroDeCuenta');"  >7</button>
+          <button class="numero" value="8" onclick="input(this,'numeroDeCuenta');"  >8</button>
+          <button class="numero" value="9" onclick="input(this,'numeroDeCuenta');"  >9</button>
+          <button class="numero" value="0" onclick="input(this,'numeroDeCuenta');"  >0</button>
+          <button class="botonBorrar" value="borrar" onclick=" deleteLastCharacter('numeroDeCuenta');">borrar</button>
+        
+        </div>
+        </section>
+    
+    
+        <section class="login-box">
+          
+          
+          
+          <p class="marginBtm etiqueta bold" style="margin-top: 10px;"> Digite la cantidad que desea depositar</p>
+    
+          <div class="contenedorInput marginBtm">
+          <label class="etiqueta" for="inputDeposito"> Cantidad</label>
+          <input class="inputLogin" id="inputDeposito" type="number" onclick="activeInputSave(this);">
+        </div>
+          
+          <button class="boton marginBtm" onclick="depositar();"> Depositar</button>
+          <p class="bold" id="textoResultado"></p>
+          
+    
+        </section>
+        <section class="headAndToes">
+          <button class="boton botonSalir" onclick="irA('index');">Salir</button>
+          <button class="boton botonSiguiente" onclick="irA('operaciones');">Anterior</button>
+        </section>
+    
+  </section>
+</section>
+  </body>
+</html>
